@@ -43,12 +43,12 @@ public class Elevator extends Subsystem {
     
     public void toteUp() {
     	pWM3.set(0.1);
-    	pWM6.set(0.1);
+    	pWM6.set(-0.1);
     }
     
     public void toteDown() {
     	pWM3.set(-0.1);
-    	pWM6.set(-0.1);
+    	pWM6.set(0.1);
     }
     
     public void stop() {
