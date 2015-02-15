@@ -41,12 +41,12 @@ public class Elevator extends Subsystem {
         //setDefaultCommand(new MySpecialCommand());
     }
     
-    public void toteUp() {
+    public void elevatorUp() {
     	pWM3.set(0.1);
     	pWM6.set(-0.1);
     }
     
-    public void toteDown() {
+    public void elevatorDown() {
     	pWM3.set(-0.1);
     	pWM6.set(0.1);
     }
