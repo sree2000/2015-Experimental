@@ -40,5 +40,19 @@ public class Arm extends Subsystem {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
     }
+    
+    public void canUp() {
+    	pWM2.set(0.1);
+    	pWM7.set(0.1);
+    }
+    
+    public void canDown() {
+    	pWM2.set(-0.1);
+    	pWM7.set(-0.1);
+    }
+    
+    public void stop(){
+    	pWM2.set(0.0);
+    	pWM7.set(0.0);
+    }
 }
-

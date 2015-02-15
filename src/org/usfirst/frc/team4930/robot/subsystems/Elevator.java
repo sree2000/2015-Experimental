@@ -40,5 +40,19 @@ public class Elevator extends Subsystem {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
     }
+    
+    public void toteUp() {
+    	pWM3.set(0.1);
+    	pWM6.set(0.1);
+    }
+    
+    public void toteDown() {
+    	pWM3.set(-0.1);
+    	pWM6.set(-0.1);
+    }
+    
+    public void stop() {
+    	pWM3.set(0.0);
+    	pWM6.set(0.0);
+    }
 }
-

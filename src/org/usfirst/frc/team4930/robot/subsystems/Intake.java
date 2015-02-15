@@ -54,4 +54,3 @@ public class Intake extends Subsystem {
     	pWM5.set(0.0);
     }
 }
-
