@@ -125,7 +125,7 @@ Children:
   - Name: Intake
     Base: Subsystem
     Children:
-    - Name: PWM8
+    - Name: PWM4
       Base: Speed Controller
       Children: []
       Properties:
