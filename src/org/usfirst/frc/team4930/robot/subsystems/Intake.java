@@ -40,18 +40,18 @@ public class Intake extends Subsystem {
     }
     
     public void rotateIn() {
+    	pWM4.set(-0.1);
     	pWM5.set(0.1);
-    	pWM4.set(0.1);
     }
     
     public void rotateOut() {
+    	pWM4.set(0.1);
     	pWM5.set(-0.1);
-    	pWM4.set(-0.1);
     }
     
     public void stop() {
-    	pWM5.set(0.0);
     	pWM4.set(0.0);
+    	pWM5.set(0.0);
     }
 }
 
